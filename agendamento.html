@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO - Agendamento de Coleta</title>
+    <link rel="stylesheet" href="../ECO/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+
+<body>
+    <header id="top">
+        <div class="main_header">
+            <a href="../ECO/index.html" class="logo animate">
+                <h1 class="titulo-moderno">ECO</h1>
+            </a>
+              <div class="header_buttons">
+                <a href="../ECO/index.htmll#about" class="btn_header animate">SOBRE</a>
+                <a href="../ECO/index.htmll#services" class="btn_header animate">SERVIÇOS</a>
+                <a href="../ECO/mapa.html" class="btn_header animate">PONTOS DE DESCARTE</a>
+                <a href="../ECO/agendamento.html" class="btn_header animate">AGENDAMENTO</a>
+                <a href="../ECO/impacto.html" class="btn_header animate">IMPACTO</a>
+                <a href="../ECO/educacional.html" class="btn_header animate">EDUCACIONAL</a>
+                <a href="../ECO/index.html#contact" class="btn_header animate">CONTATO</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="agendamento" class="page-section">
+            <div class="container">
+                <h2>Agendamento de Coleta</h2>
+                <p>Agende a coleta de seus eletrônicos em sua residência ou empresa.</p>
+
+                <form id="form-agendamento" class="form-container">
+                    <div class="form-group">
+                        <label for="ag-nome">Seu Nome:</label>
+                        <input type="text" id="ag-nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-email">Seu Email:</label>
+                        <input type="email" id="ag-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-telefone">Telefone:</label>
+                        <input type="tel" id="ag-telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-endereco">Endereço para Coleta:</label>
+                        <input type="text" id="ag-endereco" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-data">Data Preferencial:</label>
+                        <input type="date" id="ag-data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-hora">Hora Preferencial:</label>
+                        <input type="time" id="ag-hora" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ag-observacoes">Observações (tipos de eletrônicos, quantidade, etc.):</label>
+                        <textarea id="ag-observacoes" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-form">Agendar Coleta</button>
+                </form>
+
+                <h3>Agendamentos Realizados:</h3>
+                <div id="lista-agendamentos" class="lista-itens">
+                    <p>Nenhum agendamento realizado ainda.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ECO - Descarte Consciente de Eletrônicos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="../ECO/js/script.js"></script>
+</body>
+
+</html>

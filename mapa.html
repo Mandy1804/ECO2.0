@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO - Pontos de Descarte</title>
+    <link rel="stylesheet" href="../ECO2.0/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+
+<body>
+    <header id="top">
+        <div class="main_header">
+            <a href="../ECO2.0/index.htmll#about" class="logo animate">
+                <h1 class="titulo-moderno">ECO</h1>
+            </a>
+             <div class="header_buttons">
+                <a href="../ECO2.0/index.htmll#about" class="btn_header animate">SOBRE</a>
+                <a href="../ECO2.0/index.htmll#services" class="btn_header animate">SERVIÇOS</a>
+                <a href="../ECO2.0/mapa.html" class="btn_header animate">PONTOS DE DESCARTE</a>
+                <a href="../ECO2.0/agendamento.html" class="btn_header animate">AGENDAMENTO</a>
+                <a href="../ECO2.0/impacto.html" class="btn_header animate">IMPACTO</a>
+                <a href="../ECO2.0/educacional.html" class="btn_header animate">EDUCACIONAL</a>
+                <a href="../ECO2.0/index.html#contact" class="btn_header animate">CONTATO</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="pontos-descarte" class="page-section">
+            <div class="container">
+                <h2>Pontos de Descarte</h2>
+                <p>Encontre o ponto de descarte de eletrônicos mais próximo de você. Você também pode cadastrar um novo ponto!</p>
+
+                <h3>Adicionar Novo Ponto de Descarte</h3>
+                <form id="form-add-ponto" class="form-container">
+                    <div class="form-group">
+                        <label for="ponto-nome">Nome do Local:</label>
+                        <input type="text" id="ponto-nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ponto-endereco">Endereço:</label>
+                        <input type="text" id="ponto-endereco" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ponto-horario">Horário de Funcionamento:</label>
+                        <input type="text" id="ponto-horario" placeholder="Ex: Seg-Sex: 09h-18h">
+                    </div>
+                    <div class="form-group">
+                        <label for="ponto-tipos">Tipos de Eletrônicos Aceitos (separar por vírgula):</label>
+                        <input type="text" id="ponto-tipos" placeholder="Ex: celulares, pilhas, computadores">
+                    </div>
+                    <button type="submit" class="btn-form">Adicionar Ponto</button>
+                </form>
+
+                <h3>Pontos Cadastrados:</h3>
+                <div id="lista-pontos" class="lista-itens">
+                    <p>Nenhum ponto de descarte cadastrado ainda.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ECO - Descarte Consciente de Eletrônicos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="../ECO2.0/js/script.js"></script>
+</body>
+
+</html>
